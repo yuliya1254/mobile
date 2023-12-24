@@ -24,4 +24,5 @@ public interface WebDriverConfig extends Config {
 
     @Key("browserstack.app")
     String getApp();
+
 }
