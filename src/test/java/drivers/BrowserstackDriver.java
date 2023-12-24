@@ -17,7 +17,7 @@ public class BrowserstackDriver implements WebDriverProvider {
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
     @Nonnull
     @Override
-    public WebDriver createDriver(@Nonnull Capabilities capabilities) {
+    public org.openqa.selenium.WebDriver createDriver(@Nonnull Capabilities capabilities) {
         MutableCapabilities caps = new MutableCapabilities();
 
         // Set your access credentials
